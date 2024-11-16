@@ -1,39 +1,44 @@
 feature:
   - head-branch:
-      - "^feat/"
-      - "^feature/"
+    - '^feat/'
+    - '^feature/'
+
+breaking:
+  - head-branch:
+    - '^breaking/'
 
 bugfix:
   - head-branch:
-      - "^fix/"
-      - "^bugfix/"
-      - "^modify/"
+    - '^fix/'
+    - '^bugfix/'
+    - '^modify/'
 
 refactor:
   - head-branch:
-      - "^refactor/"
+    - '^refactor/'
 
-doc:
+documentation:
   - changed-files:
-      - any-glob-to-any-file:
-          - "**/README.md"
+    - any-glob-to-any-file:
+      - '**/README.md'
   - head-branch:
-      - "^doc/"
-      - "^docs/"
-      - "^documentation/"
+    - '^doc/'
+    - '^docs/'
+    - '^documentation/'
 
 deps:
   - head-branch:
-      - "^dep/"
-      - "^deps/"
-      - "^dependencies/"
+    - '^dep/'
+    - '^deps/'
+    - '^dependencies/'
 
 maintenance:
   - changed-files:
-      - any-glob-to-any-file:
-          - ".github/**"
+    - any-glob-to-any-file:
+      - '.github/**'
   - head-branch:
-      - "^maintenance/"
-      - "^ci/"
-      - "^workflow/"
-      - "^chore/"
+    - '^maintenance/'
+    - '^ci/'
+    - '^workflow/'
+    - '^chore/'
+
