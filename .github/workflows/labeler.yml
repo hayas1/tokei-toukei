@@ -1,6 +1,8 @@
+# Managed by terraform. https://github.com/hayas1/tfgh
+
 name: Pull Request Labeler
 on:
-  - pull_request_target
+- pull_request_target
 
 jobs:
   labeler:
@@ -9,4 +11,5 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5
+    - uses: actions/labeler@v5
+
